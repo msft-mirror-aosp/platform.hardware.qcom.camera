@@ -2,11 +2,10 @@
 ifneq ($(TARGET_BOARD_AUTO),true)
   ifneq ($(strip $(USE_CAMERA_STUB)),true)
     ifneq ($(BUILD_TINY_ANDROID),true)
-      ifneq ($(filter msm8996,$(TARGET_BOARD_PLATFORM)),)
-        include $(call all-subdir-makefiles)
-      endif
-      ifneq ($(filter msmcobalt,$(TARGET_BOARD_PLATFORM)),)
-        include $(call all-makefiles-under,$(call my-dir)/msmcobalt)
+      ifneq ($(USE_VR_CAMERA_HAL), true)
+        ifneq ($(filter msm8998,$(TARGET_BOARD_PLATFORM)),)
+          include $(call all-makefiles-under,$(call my-dir)/msm8998)
+        endif
       endif
     endif
   endif
