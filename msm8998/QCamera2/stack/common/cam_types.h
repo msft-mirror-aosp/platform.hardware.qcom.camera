@@ -2430,7 +2430,7 @@ typedef enum {
     CAM_INTF_META_TOUCH_AE_RESULT,
     /* Param for updating initial exposure index value*/
     CAM_INTF_PARM_INITIAL_EXPOSURE_INDEX,
-    /* Gain applied post raw captrue prior to stats collection.
+    /* Gain applied post raw capture prior to stats collection.
        ISP digital gain */
     CAM_INTF_META_ISP_SENSITIVITY,
     /* Param for enabling instant aec*/
